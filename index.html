@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="ngDiary" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ngDiary</title>
+   <link rel="stylesheet" href="./style/common.css">
+    <script src="./lib/angular.min.js"></script>
+    <script src="./lib/angular.router.min.js"></script>
+    <script src="./lib/angular.storage.js"></script>
+    <script src="./src/app.js"></script>
+</head>
+<body>
+    <div>
+        <a href="#/new/">Add</a>
+        <a href="#/search/">Search</a>
+        <a href="javascript:void(0)" ng-click="clear()">Clear</a>
+    </div>
+    <ul>
+        <li ng-repeat="diary in diaries">
+            <a ng-href="#/view/{{diary.guid}}">{{diary.title}}</a>
+            <a href="javascript:void(0)" ng-click="delete(diary.guid)">delete</a>
+        </li>
+    </ul>
+    <div ng-view></div>
+</body>
+</html>
