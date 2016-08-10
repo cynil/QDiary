@@ -3,6 +3,8 @@
 
 QDiary is a lightweight diary web application build with AngularJS and Bootstrap.
 
-It is very safe and convenient, As it is backend-less -- all of its data are stored in your own computer\'s localStorage, and it is available event when youare offline.
+`Bootstrap` for UI design, `AngularJS` acts as the backbone of the whole application. And it's data stores on `localStorage`.
 
-Enjoy your time with writing diaries!
+The localStorage API was encapsulated as an AngularJS `service` in the application, which was created as a independent repository : [simple-storage](https://github.com/cynil/simple-storage), since I found it may be useful in the situation.
+
+Enjoy your time with writing diaries.
