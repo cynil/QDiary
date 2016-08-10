@@ -9,6 +9,12 @@ body{
 nav.navbar{
     border-radius: 0px;
 }
+.navbar-brand{
+    color: #dedede;
+}
+ul.diary-list input[type="checkbox"]{
+    vertical-align: baseline;
+}
 .navbar-inverse{
     background-color: #323232;
     margin-bottom: 0px;
@@ -58,12 +64,22 @@ nav.navbar{
 }
 .default-html{
     background: url(../images/add.png) 48% 48% no-repeat;
+    background-size: 195px 195px;
     height: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.default-html:hover{
+    background-size: 200px 200px;
 }
 .breadcrumb{
     background-color: #eef;
     margin-bottom: 0px;
     box-shadow: 0px 1px 2px silver;
+}
+.linethrough{
+    text-decoration: line-through;
+    color: indianred;
 }
 ::-webkit-scrollbar{
 	width: 2px;
