@@ -7,4 +7,4 @@ QDiary is a lightweight diary web application build with AngularJS and Bootstrap
 
 The localStorage API was encapsulated as an AngularJS `service` in the application, which was created as a independent repository : [simple-storage](https://github.com/cynil/simple-storage), since I found it may be useful in other situation.
 
-Enjoy your time with writing diaries.
+Enjoy your time with writing diaries from [here](http://cynil.github.io/QDiary/).
